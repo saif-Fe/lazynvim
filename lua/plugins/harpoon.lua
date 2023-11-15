@@ -1,0 +1,4 @@
+return {
+  -- harpoon
+  { "ThePrimeagen/harpoon" },
+}
