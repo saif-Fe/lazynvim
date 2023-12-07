@@ -22,11 +22,23 @@ end)
 vim.keymap.set("n", "<A-p>", function()
   ui.nav_file(4)
 end)
+vim.keymap.set("n", "<A-q>", function()
+  ui.nav_file(5)
+end)
+vim.keymap.set("n", "<A-w>", function()
+  ui.nav_file(6)
+end)
+vim.keymap.set("n", "<A-e>", function()
+  ui.nav_file(7)
+end)
+vim.keymap.set("n", "<A-r>", function()
+  ui.nav_file(8)
+end)
 vim.keymap.set("n", "<A-[>", function()
-  ui.nav_next()
+  ui.nav_prev()
 end)
 vim.keymap.set("n", "<A-]>", function()
-  ui.nav_prev()
+  ui.nav_next()
 end)
 
 vim.opt.termguicolors = true
@@ -42,3 +54,9 @@ ccc.setup({
     lsp = true,
   },
 })
+
+require("mini.files").setup()
+
+vim.keymap.set("n", "<Leader>e", function()
+  MiniFiles.open()
+end)
