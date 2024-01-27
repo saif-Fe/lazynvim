@@ -55,10 +55,8 @@ ccc.setup({
   },
 })
 
-require("mini.files").setup()
+require("oil").setup()
 
-vim.keymap.set("n", "<Leader>e", function()
-  MiniFiles.open()
-end)
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.keymap.set("n", "<F5>", "<cmd>put =strftime('%c')<CR>P<cr>", { silent = true })
