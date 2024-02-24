@@ -43,4 +43,7 @@ require("lazy").setup({
       },
     },
   },
+  opts = {
+    colorscheme = "tokyonight",
+  },
 })

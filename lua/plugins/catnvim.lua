@@ -26,9 +26,9 @@ return {
       },
       color_overrides = {
         mocha = {
-          base = "#08080d",
-          mantle = "#08080d",
-          crust = "#08080d",
+          base = "#040407",
+          mantle = "#040407",
+          crust = "#040407",
         },
       },
       integrations = {
